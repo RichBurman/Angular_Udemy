@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AssignmentComponent {
   username = '';
+  showSecret = false;
+  log = [];
+
+  onToogleDetails() {
+    this.showSecret = !this.showSecret;
+    this.log.push(this.log.length + 1);
+  }
 }
